@@ -13,6 +13,9 @@ import {
   IndianRupee,
   ShieldAlert,
   Settings,
+  Award,
+  Laptop,
+  MessageSquare,
   ChevronLeft,
   ChevronRight,
   X
@@ -55,6 +58,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
         { id: 'channels', label: 'Channels', icon: Radio },
         { id: 'colleges', label: 'Colleges', icon: Building },
         { id: 'analytics', label: 'Analytics', icon: BarChart3 },
+      ],
+    },
+    {
+      title: 'CHALLENGE ASSETS',
+      items: [
+        { id: 'evaluator', label: 'AI Project Evaluator', icon: Award, badge: 'Evaluation', badgeColor: 'bg-amber-400 text-black font-bold' },
+        { id: 'workshop', label: 'Workshop Studio', icon: Laptop, badge: '60m Live', badgeColor: 'bg-cyan-500/20 text-cyan-300' },
+        { id: 'whatsapp_flow', label: 'WhatsApp Bot Flow', icon: MessageSquare, badge: 'Interactive', badgeColor: 'bg-emerald-500/20 text-emerald-300' },
       ],
     },
     {

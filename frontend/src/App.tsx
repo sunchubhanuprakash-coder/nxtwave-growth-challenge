@@ -19,6 +19,9 @@ import { AutomationCenter } from './components/AutomationCenter';
 import { BudgetEngine } from './components/BudgetEngine';
 import { SimulationCenter } from './components/SimulationCenter';
 import { SettingsCenter } from './components/views/SettingsCenter';
+import { ProjectEvaluator } from './components/ProjectEvaluator';
+import { WorkshopStudio } from './components/WorkshopStudio';
+import { WhatsAppFlowSimulator } from './components/WhatsAppFlowSimulator';
 
 // Shared Forms
 import { RegistrationForm } from './components/RegistrationForm';
@@ -212,6 +215,12 @@ const AppContent: React.FC = () => {
         return <BudgetEngine />;
       case 'simulation':
         return <SimulationCenter />;
+      case 'evaluator':
+        return <ProjectEvaluator />;
+      case 'workshop':
+        return <WorkshopStudio />;
+      case 'whatsapp_flow':
+        return <WhatsAppFlowSimulator />;
       case 'settings':
         return <SettingsCenter theme={theme} onToggleTheme={toggleTheme} />;
       default:
